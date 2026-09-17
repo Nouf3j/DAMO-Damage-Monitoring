@@ -1,0 +1,121 @@
+.report-container {
+    width: 100vw;
+    
+    background-color: #F2FAFA;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .report-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .report-form {
+    width: 90%;
+    max-width: 500px;
+    background-color: #F8F9FC;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .report-title {
+    color: #354EAB;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .steps-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .step-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .step-circle.active {
+    background-color: #88D499;
+    color: white;
+  }
+  
+  .step-circle.inactive {
+    background-color: #E0E0E0;
+    color: #9D9D9D;
+  }
+  
+  .step-connector {
+    width: 40px;
+    height: 4px;
+  }
+  
+  .step-connector.active {
+    background-color: #88D499;
+  }
+  
+  .step-connector.inactive {
+    background-color: #E0E0E0;
+  }
+  
+  .report-subtitle {
+    width: 100%;
+    opacity: 0.60;
+    color: #252525;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 52px ;
+  }
+  
+  .report-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #354EAB;
+    text-align: center;
+    margin-bottom: 12px;
+    background-color: #FFFFFF;
+  }
+  
+  .report-button {
+    width: 60%;
+    padding: 12px;
+    background-color: #354EAB;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .report-button:hover {
+    background-color: #2a3d8a;
+  }
+  
+  .report-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }

@@ -1,0 +1,140 @@
+/* Traf.css */
+
+.app-container {
+    width: 100vw;
+    
+    background-color: #F2FAFA;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .form-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .form-container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #F8F9FC;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .form-title {
+    color: #354EAB;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .steps-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .step-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .step-circle.active {
+    background-color: #88D499;
+    color: white;
+  }
+  
+  .step-circle.inactive {
+    background-color: #E0E0E0;
+    color: #9D9D9D;
+  }
+  
+  .step-connector {
+    width: 40px;
+    height: 4px;
+  }
+  
+  .step-connector.active {
+    background-color: #88D499;
+  }
+  
+  .step-connector.inactive {
+    background-color: #E0E0E0;
+  }
+  
+  .instructions-box {
+    color: #5E6366;
+    font-size: 14px;
+    text-align: left;
+    background-color: #F2FAFA;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .instructions-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .upload-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #252525;
+    margin-bottom: 10px;
+  }
+  
+  .file-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .submit-button {
+    width: 60%;
+    padding: 12px;
+    background-color: #88D499;
+    border-radius: 8px;
+    color: #9D9D9D;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  
+  
+  .submit-button:hover {
+    background-color: #88D499;
+  }
+  
+  .submit-button:disabled {
+    background-color: #E0E0E0;
+    color: #9D9D9D;
+    cursor: not-allowed;
+  }

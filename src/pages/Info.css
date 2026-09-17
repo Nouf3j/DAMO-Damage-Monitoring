@@ -1,0 +1,321 @@
+
+.app-container {
+    width: 100vw;
+    
+    background-color: #F2FAFA;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 20px;
+    transition: margin-left 0.3s;
+    flex-direction: column; 
+    padding-top: 100px; 
+  }
+  
+  .main-content.sidebar-open {
+    margin-left: 250px;
+  }
+  
+ 
+  .form-box {
+    width: 400px;
+    background-color: white;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0px 0 100px; 
+  }
+  
+  
+  .user-icon {
+    color: #354EAB;
+    margin-bottom: 15px;
+  }
+  
+  .form-title {
+    color: #354EAB;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .form-subtitle {
+    color: #252525;
+    opacity: 0.6;
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #354EAB;
+  }
+  
+  .submit-button {
+    width: 50%;
+    padding: 15px;
+    background-color: #88D499;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #76C189;
+  }
+
+  .profile-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .profile-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-header h1 {
+    color: #354EAB;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+  
+  .profile-icon {
+    color: #354EAB;
+    margin-bottom: 10px;
+  }
+  
+  .user-info {
+    margin-bottom: 2rem;
+  }
+  
+  .welcome-message {
+    color: #252525;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .user-id {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .info-icon {
+    margin-right: 8px;
+    color: #354EAB;
+  }
+  
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    color: #354EAB;
+  }
+  
+  .profile-input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    transition: border-color 0.3s;
+  }
+  
+  .profile-input:focus {
+    border-color: #354EAB;
+    outline: none;
+  }
+  
+  .save-button {
+    padding: 15px;
+    background-color: #88D499;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button:hover {
+    background-color: #76C189;
+  }
+  
+  .save-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-header h1 {
+    color: #354EAB;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .profile-icon {
+    color: #354EAB;
+  }
+  
+  .welcome-message {
+    color: #252525;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #354EAB;
+  }
+  
+  .display-field {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: left;
+  }
+  
+  .profile-input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+  }
+  
+  .field-label {
+    position: absolute;
+    top: -10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .save-button {
+    padding: 15px;
+    background-color: #88D499;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .save-button:hover {
+    background-color: #76C189;
+  }
+  
+  .save-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }

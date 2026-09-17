@@ -1,0 +1,92 @@
+
+
+.app-container {
+    width: 100vw;
+    
+    background-color: #F2FAFA;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .report-created-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .report-title {
+    color: #354EAB;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .report-subtitle {
+    opacity: 0.75;
+    color: #252525;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    max-width: 400px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .action-button {
+    min-width: 160px;
+    height: 50px;
+    background-color: #88D499;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0 20px;
+  }
+  
+  .action-button:hover {
+    background-color: #76C38B;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 480px) {
+    .report-title {
+      font-size: 28px;
+    }
+    
+    .report-subtitle {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+    
+    .buttons-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .action-button {
+      width: 100%;
+    }
+  }

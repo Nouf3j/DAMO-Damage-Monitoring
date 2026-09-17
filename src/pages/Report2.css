@@ -1,0 +1,205 @@
+/* Main Container */
+.report2-app-container {
+  background-color: #F2FAFA;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Form Wrapper */
+.report2-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 20px;
+  margin-top: 80px;
+}
+
+/* Form Container */
+.report2-form-container {
+  width: 650px;
+  max-width: 500px;
+  background-color: #F8FBFF;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Title */
+.report2-title {
+  color: #354EAB;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Stepper */
+.report2-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.report2-step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.report2-step-active {
+  background-color: #88D499;
+  color: white;
+}
+
+.report2-step-inactive {
+  background-color: #E0E0E0;
+  color: #9D9D9D;
+}
+
+.report2-step-connector {
+  width: 50px;
+  height: 4px;
+}
+
+.report2-connector-active {
+  background-color: #88D499;
+}
+
+.report2-connector-inactive {
+  background-color: #E0E0E0;
+}
+
+/* Section Title */
+.report2-section-title {
+  color: #252525;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Input Container */
+.report2-input-container {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Input Fields */
+.report2-input {
+  width: 100%;
+  padding: 15px 40px 15px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  color: #9D9D9D;
+  text-align: center;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+/* Time Range Container */
+.report2-time-range-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.report2-time-picker {
+  flex: 1;
+  position: relative;
+}
+
+.report2-time-separator {
+  color: #9D9D9D;
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+/* Date/Time Wrapper */
+.report2-datetime-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Icons */
+.report2-calendar-icon,
+.report2-clock-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #354EAB;
+  pointer-events: none;
+}
+
+/* Textarea */
+.report2-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  color: #9D9D9D;
+  text-align: center;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  resize: none; /* يمنع تغيير الحجم */
+  overflow-y: hidden; /* يخفي شريط التمرير */
+}
+
+/* Button Container */
+.report2-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Button */
+.report2-button {
+  width: 50%;
+  padding: 15px;
+  background-color: #354EAB;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.report2-button:hover {
+  background-color: #2a3f8a;
+}
+
+/* Time Dropdown Styles */
+.report2-input-container select.report2-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23354EAB'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+  padding-right: 35px;
+  text-align-last: center;
+  cursor: pointer;
+}
+
+/* Disabled options */
+.report2-input-container select option:disabled {
+  color: #ccc;
+}
